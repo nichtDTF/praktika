@@ -1,0 +1,3 @@
+﻿  PROJECT.cpp
+D:\khai\st\2 SEM\PRAKTIKA\PROJECT\PROJECT\Generate_Massive.h(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  PROJECT.vcxproj -> D:\khai\st\2 SEM\PRAKTIKA\PROJECT\Debug\PROJECT.exe
