@@ -4,6 +4,13 @@ int Check_massie[N] = { 0 };
 int* massiv_; 
 int c = 0;
 
+/*
+	Функция: move_into()
+	Параметры:	
+	Возвращает:	
+*/
+
+
 void move_into()
 {
 	massiv_ = (int*)malloc(N * sizeof(int));
@@ -15,6 +22,12 @@ void move_into()
 			c++;
 		}	
 }
+
+/*
+	Функция: output()
+	Параметры:
+	Возвращает:
+*/
 
 void output()
 {
@@ -32,6 +45,12 @@ void output()
 	printf(    "\t|Totally was founed %i numbers that aren't in massiv|\n", c);
 	printf("    \t ----------------------------------------------------\n\n");
 }
+
+/*
+	Функция: find()
+	Параметры:  massiv — исходный массив сгенерированных чисел
+	Возвращает: EXIT_SUCCESS — если функция завершила работу корректно
+*/
 
 int find(int* massiv)
 {
