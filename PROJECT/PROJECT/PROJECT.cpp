@@ -1,20 +1,13 @@
 ﻿/**
 * @file PROJECT.cpp
 * @author Чуев О.В., гр. 515-і
-* @date 16 июня 2020
+* @date 22 июня 2020
 * @brief Практика
 *
 * 
 */
 
-#define _CRT_SECURE_NO_WARNINGS
-#define N 899
-
-#include <stdio.h>
-
-#include "Generate_Massive.h"
-#include "Find_Part.h"
-#include "Save_logs.h"
+#include "Module.h"
 
 int main()
 {
@@ -30,5 +23,5 @@ int main()
 	find(massiv);
 	output();
 
-	return 0;
+	return EXIT_SUCCESS;
 }

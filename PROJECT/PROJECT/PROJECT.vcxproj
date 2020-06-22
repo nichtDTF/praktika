@@ -147,12 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Find_Part.cpp" />
+    <ClCompile Include="Generate_Massive.cpp" />
     <ClCompile Include="PROJECT.cpp" />
+    <ClCompile Include="Save_logs.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Find_Part.h" />
-    <ClInclude Include="Generate_Massive.h" />
-    <ClInclude Include="Save_logs.h" />
+    <ClInclude Include="Module.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
