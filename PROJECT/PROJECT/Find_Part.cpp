@@ -1,20 +1,17 @@
 #include "Module.h"
 
-int Check_massie[N] = { 0 };
-int* massiv_;
 int c = 0;
 
 /*
 	‘ункци€: move_into()
-	ѕараметры:
+	ѕараметры: Check_massie Ч массив признаков 
+			   massiv_ Ч массив отсутствующих чисел
 	¬озвращает:
 */
 
 
-void move_into()
+void move_into(int *Check_massie, int* massiv_)
 {
-	massiv_ = (int*)malloc(N * sizeof(int));
-
 	for (int i = 0; i < N; i++)
 		if (Check_massie[i] == 0)
 		{
@@ -25,11 +22,11 @@ void move_into()
 
 /*
 	‘ункци€: output()
-	ѕараметры:
+	ѕараметры: massiv_ Ч массив отсутствующих чисел
 	¬озвращает:
 */
 
-void output()
+void output(int* massiv_)
 {
 	printf("\n\n%i ", massiv_[0]);
 	for (int i = 1; i < c; i++)
@@ -49,10 +46,12 @@ void output()
 /*
 	‘ункци€: find()
 	ѕараметры:  massiv Ч исходный массив сгенерированных чисел
+				Check_massie Ч массива признаков
+				massiv_ Ч массив отсутствующих чисел
 	¬озвращает: EXIT_SUCCESS Ч если функци€ завершила работу корректно
 */
 
-int find(int* massiv)
+int find(int* massiv, int* Check_massie, int* massiv_)
 {
 	for (int i = 0; i < N; i++)
 	{
@@ -61,7 +60,7 @@ int find(int* massiv)
 		Check_massie[Value] = 1;
 	}
 
-	move_into();
+	move_into(Check_massie, massiv_);
 
 	return EXIT_SUCCESS;
 }

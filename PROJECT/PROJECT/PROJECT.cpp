@@ -1,7 +1,7 @@
 ﻿/**
 * @file PROJECT.cpp
 * @author Чуев О.В., гр. 515-і
-* @date 22 июня 2020
+* @date 23 июня 2020
 * @brief Практика
 *
 * 
@@ -11,8 +11,11 @@
 
 int main()
 {
-	int massiv[N];
-	
+	int massiv[N];					//исходный массив
+	int Check_massie[N] = { 0 };	//массив признаков
+	int* massiv_;					//массив для отсутствующих чисел
+	massiv_ = (int*)malloc(N * sizeof(int));
+
 	printf("\t ------------------------------------------------------------------------------------------------------\n");
 	printf("\t|Our program will generate 900 numbers in range (100-999) and will find numbers that arent in this list|\n");
 	printf("\t ------------------------------------------------------------------------------------------------------\n");
@@ -20,8 +23,8 @@ int main()
 	printf("\t ------------------------------------------------------------------------------------------------------\n");
 
 	generate(massiv);
-	find(massiv);
-	output();
+	find(massiv, Check_massie, massiv_);
+	output(massiv_);
 
 	return EXIT_SUCCESS;
 }

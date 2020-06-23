@@ -1,0 +1,11 @@
+﻿  Find_Part.cpp
+D:\khai\1 KURS\TP\2 SEM\PRAKTIKA\PROJECT\PROJECT\Module.h(3,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+D:\khai\1 KURS\TP\2 SEM\PRAKTIKA\PROJECT\PROJECT\Find_Part.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+  PROJECT.cpp
+D:\khai\1 KURS\TP\2 SEM\PRAKTIKA\PROJECT\PROJECT\Module.h(3,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+D:\khai\1 KURS\TP\2 SEM\PRAKTIKA\PROJECT\PROJECT\PROJECT.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+  Save_logs.cpp
+D:\khai\1 KURS\TP\2 SEM\PRAKTIKA\PROJECT\PROJECT\Module.h(3,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+D:\khai\1 KURS\TP\2 SEM\PRAKTIKA\PROJECT\PROJECT\Save_logs.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+  Создание кода...
+  PROJECT.vcxproj -> D:\khai\1 KURS\TP\2 SEM\PRAKTIKA\PROJECT\x64\Debug\PROJECT.exe
